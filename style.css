@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media (min-width: 1000px) {
+#home {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+#features {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+}
+
+
+html {
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background-image: url('background.jpg'); /* Update with your image file name */
+    background-size: cover; /* Adjust to cover entire background */
+   
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 35px 95px; 
+    outline: 1px solid #000000;
+    outline-offset: -15px;
+
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.logo {
+    font-size: 35px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(48, 47, 47);
+    padding: 20px;
+    font-size: 18px;
+}
+.nav-links a:hover {
+    color: rgb(204, 199, 199);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    transition: all 300ms ease;
+}
+.content {
+    padding: 10px;
+    width: 50%;
+}
+.heading1 {
+    margin-bottom: 10px;
+}
+.para1 {
+    color: rgb(71, 71, 71);
+    margin-bottom: 10px;
+}
+.video1 {
+    margin-bottom: 10px;
+}
+
+.Article1 {
+    padding: 10px 25px;
+}
+.article2-para,
+.article1-para {
+    color: rgb(71, 71, 71);
+}
+.article-heading {
+    margin-bottom: 10px;
+}
+.article1-h2,
+.article2-h2 {
+    margin-bottom: 10px;
+    color: rgb(71, 71, 71); 
+}
+
+.about {
+    padding: 20px;
+    margin: 40px;
+    margin-left: 2.5px;
+    border: 1.5px, solid, #4d4d4d;
+    border-radius: 20px;
+}
+.about-para,
+.about-h3,
+.about-heading {
+    margin-bottom: 10px;
+}
+
+.about-para,
+.about-h3-para {
+    color:rgb(71, 71, 71);
+}
+.features {
+    margin-left: 20px;
+}
+.feature-heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.feature1, .feature2, .feature3, .feature4 {
+    border: 1.5px, solid, #4d4d4d;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+}
+.feature1 h3, .feature2 h3, .feature3 h3, .feature4 h3 {
+    margin-bottom: 10px;
+}
+.feature1 p, .feature2 p, .feature3 p, .feature4 p {
+    margin-bottom: 15px;
+}
+.feature1 a, .feature2 a, .feature3 a, .feature4 a{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding-top: 5px;
+    text-decoration: none;
+    border: 1px, solid, black;
+    border-radius: 20px;
+    padding: 6px;
+}
+.feature1:hover, .feature2:hover, .feature3:hover, .feature4:hover {
+    background-color: black;
+    color: white;
+    transition: all 300ms ease;
+}
+.feature1 a:hover, .feature2 a:hover, .feature3 a:hover, .feature4 a:hover {
+    background-color: white;
+    color: black;
+    transition: all 350ms ease;
+}
+.feature1 p, .feature2 p, .feature3 p, .feature4 p {
+    margin-bottom: 15px;
+}
+
+footer {
+    color: white;
+    padding: 10px;
+    background-color: #000000;
+    text-align: center;
+}
+.copyright {
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.signature {
+    color:rgb(156, 156, 156)
+}
+.footer-links a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.footer-links li {
+    display: inline;
+    padding: 10px;
+}
+.footer-links {
+    margin-bottom: 20px;
+}
+
+   /* Hamburger menu styles */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 10px;
+        background-image: url(mobile-wall.jpg);
+        background-size: cover;
+    }
+    .nav-links {
+        display: none;
+        position: absolute; /* Position independently */
+        top: 0%; /* Position below the navbar */
+        left: 0; /* Align with the left edge */
+        width: 100%; /* Full width */
+        background-color: #fff; /* Optional: Background color for contrast */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Box shadow for depth */
+        z-index: 1000; /* Ensure it's above other content */
+        text-align: center; /* Center text horizontally */
+    }
+    .nav-links.open {
+        display: block; /* Show when open */
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 15px 0;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end; /* Align icon to the right */
+        padding: 10px; /* Optional: Add padding for touch area */
+        box-sizing: border-box; /* Ensure padding doesn't increase size */
+    }
+    .logo {
+        font-size: 25px;
+    }
+    .ham-logo {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .content {
+        width: 100%;
+    }
+    .Article1 {
+      padding: 10px;
+    }
+    .video1,
+    .video2 {
+        position: relative;
+        width: 100%;
+        padding-bottom: 57.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+    }
+    .video1 iframe,
+    .video2 iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .about {
+        width: 100%;
+        font-size: 12.5px;
+    }
+    #features {
+       padding: 0;
+    }
+    .feature1, .feature2, .feature3, .feature4 {
+        margin-bottom: 20px;
+    }
+    .features .hover-effect {
+        background-color: black;
+        color: white;
+        transition: all 400ms ease;
+    }
+    
+    .features .hover-effect a {
+        background-color: white;
+        color: black;
+        transition: all 400ms ease;
+    }
+    .footer-links li{
+        display: block;
+    }
+}
